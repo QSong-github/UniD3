@@ -10,6 +10,7 @@ With the rapid development of large-scale language models (LLMs) in the biomedic
 
 ### QA with UniD3
    ```bash
+   # Please specify the specific working path, large language model and search method.
    $ python QA_launcher.py --working_dir "/UniD3/KG_building_level2/level2_T2_70B" --model "myllama3.3_70B" --mode "mix"
    ```
 
