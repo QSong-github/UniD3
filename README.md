@@ -10,7 +10,7 @@
 
 
 
-### Dataset Usage  <img src="https://huggingface.co/front/assets/huggingface_logo.svg" alt="Hugging Face" width="16" />
+### Dataset Usage  
    (1) [DDM](https://huggingface.co/datasets/Mike2481/UniD3_DDM)
    
    #### Pandas  <img src="https://pandas.pydata.org/static/img/pandas_mark.svg" alt="Pandas" width="16" />
@@ -19,6 +19,7 @@
    # Login using e.g. `huggingface-cli login` to access this dataset
    $ df = pd.read_csv("hf://datasets/Mike2481/UniD3_DDM/DDM.csv")
    ```
+   #### HuggingFace <img src="https://huggingface.co/front/assets/huggingface_logo.svg" alt="Hugging Face" width="16" />
    ```bash
    $ from datasets import load_dataset
    # Login using e.g. `huggingface-cli login` to access this dataset
