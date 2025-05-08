@@ -45,3 +45,7 @@
    # Login using e.g. `huggingface-cli login` to access this dataset
    $ ds = load_dataset("Mike2481/UniD3_DTA")
    ```
+### Citation
+
+### License
+MIT License © Qianqian Song Lab
