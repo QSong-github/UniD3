@@ -8,9 +8,9 @@
    $ cd ./benchmark/Geneformer-finetuing-lora-prompt_cell_cls/
    ```
 
-<img src="https://huggingface.co/front/assets/huggingface_logo.svg" alt="Hugging Face" width="30" />
 
-### Dataset Usage
+
+### Dataset Usage  <img src="https://huggingface.co/front/assets/huggingface_logo.svg" alt="Hugging Face" width="30" />
    (1) [DDM](https://huggingface.co/datasets/Mike2481/UniD3_DDM)
    
    ```bash
