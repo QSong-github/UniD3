@@ -8,8 +8,9 @@
    $ cd ./benchmark/Geneformer-finetuing-lora-prompt_cell_cls/
    ```
 
-### Dataset Usage
+### Dataset Usage ![Hugging Face](https://huggingface.co/front/assets/huggingface_logo.svg)
    (1) [DDM](https://huggingface.co/datasets/Mike2481/UniD3_DDM)
+   
    ```bash
    $ import pandas as pd
    # Login using e.g. `huggingface-cli login` to access this dataset
