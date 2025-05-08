@@ -26,43 +26,34 @@
    ds = load_dataset("Mike2481/UniD3_DDM")
    ```
 
-   #### Croissant  <img src="https://github.com/CroissantLibrary/croissant/raw/main/docs/logo.png" alt="Croissant" width="20" />
-   ```
-   import requests
-   # Login using e.g. `huggingface-cli login` to access this dataset
-   headers = build_hf_headers()  # handles authentication
-   jsonld = requests.get("https://huggingface.co/api/datasets/Mike2481/UniD3_DEA/croissant", headers=headers).json()
-   ds = Dataset(jsonld=jsonld)
-   records = ds.records("default")
-   ```
-
-
-
-
-
-
    (3) [DEA](https://huggingface.co/datasets/Mike2481/UniD3_DEA)
-   ```bash
-   $ import pandas as pd
-   # Login using e.g. `huggingface-cli login` to access this dataset
-   $ ds = load_dataset("Mike2481/UniD3_DEA")
+
+   #### Pandas  <img src="https://pandas.pydata.org/static/img/pandas_mark.svg" alt="Pandas" width="20" />
    ```
-   ```bash
-   $ from datasets import load_dataset
+   import pandas as pd
    # Login using e.g. `huggingface-cli login` to access this dataset
-   $ ds = load_dataset("Mike2481/UniD3_DEA")
+   ds = load_dataset("Mike2481/UniD3_DEA")
+   ```
+   #### HuggingFace <img src="https://huggingface.co/front/assets/huggingface_logo.svg" alt="Hugging Face" width="20" />
+   ```
+   from datasets import load_dataset
+   # Login using e.g. `huggingface-cli login` to access this dataset
+   ds = load_dataset("Mike2481/UniD3_DEA")
    ```
    
    (4) [DTA](https://huggingface.co/datasets/Mike2481/UniD3_DTA)
-   ```bash
-   $ import pandas as pd
-   # Login using e.g. `huggingface-cli login` to access this dataset
-   $ df = pd.read_csv("hf://datasets/Mike2481/UniD3_DTA/DTA.csv")
+
+   #### Pandas  <img src="https://pandas.pydata.org/static/img/pandas_mark.svg" alt="Pandas" width="20" />
    ```
-   ```bash
-   $ from datasets import load_dataset
+   import pandas as pd
    # Login using e.g. `huggingface-cli login` to access this dataset
-   $ ds = load_dataset("Mike2481/UniD3_DTA")
+   df = pd.read_csv("hf://datasets/Mike2481/UniD3_DTA/DTA.csv")
+   ```
+   #### HuggingFace <img src="https://huggingface.co/front/assets/huggingface_logo.svg" alt="Hugging Face" width="20" />
+   ```
+   from datasets import load_dataset
+   # Login using e.g. `huggingface-cli login` to access this dataset
+   ds = load_dataset("Mike2481/UniD3_DTA")
    ```
 ### Citation
 
