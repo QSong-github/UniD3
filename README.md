@@ -9,37 +9,39 @@
    ```
 
 ### Dataset Usage
-   (1) [Geneformer](https://huggingface.co/ctheodoris/Geneformer)
-   ```bash
-   # entering the code directory
-   $ cd ./benchmark/Geneformer-finetuing-lora-prompt_cell_cls/
-   # creating dataset
-   $ python dataset_making.py
-   # generating fixed embedding
-   $ python get_ebd.py
-   # train and test by fixed embedding
-   $ python benchmarking_main_EBD.py
-   # train and test by fine-tuning with LORA
-   $ python benchmarking_main_FT.py
-   ```
-   
-   (2) [DDM](https://github.com/deeplearningplus/tGPT)
+   (1) [DDM](https://huggingface.co/datasets/Mike2481/UniD3_DDM)
    ```bash
    $ import pandas as pd
    # Login using e.g. `huggingface-cli login` to access this dataset
    $ df = pd.read_csv("hf://datasets/Mike2481/UniD3_DDM/DDM.csv")
+   ```
+   ```bash
+   $ from datasets import load_dataset
+   # Login using e.g. `huggingface-cli login` to access this dataset
+   $ ds = load_dataset("Mike2481/UniD3_DDM")
    ```
 
-   (3) [DEA](https://github.com/snap-stanford/uce)
+
+   (3) [DEA](https://huggingface.co/datasets/Mike2481/UniD3_DEA)
    ```bash
    $ import pandas as pd
    # Login using e.g. `huggingface-cli login` to access this dataset
-   $ df = pd.read_csv("hf://datasets/Mike2481/UniD3_DDM/DDM.csv")
+   $ ds = load_dataset("Mike2481/UniD3_DEA")
+   ```
+   ```bash
+   $ from datasets import load_dataset
+   # Login using e.g. `huggingface-cli login` to access this dataset
+   $ ds = load_dataset("Mike2481/UniD3_DEA")
    ```
    
-   (4) [DTA](https://github.com/TencentAILabHealthcare/scBERT)
+   (4) [DTA](https://huggingface.co/datasets/Mike2481/UniD3_DTA)
    ```bash
    $ import pandas as pd
    # Login using e.g. `huggingface-cli login` to access this dataset
-   $ df = pd.read_csv("hf://datasets/Mike2481/UniD3_DDM/DDM.csv")
+   $ df = pd.read_csv("hf://datasets/Mike2481/UniD3_DTA/DTA.csv")
+   ```
+   ```bash
+   $ from datasets import load_dataset
+   # Login using e.g. `huggingface-cli login` to access this dataset
+   $ ds = load_dataset("Mike2481/UniD3_DTA")
    ```
