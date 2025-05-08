@@ -10,8 +10,7 @@ With the rapid development of large-scale language models (LLMs) in the biomedic
 
 ### QA with UniD3
    ```bash
-   # entering the code directory
-   $ cd ./benchmark/Geneformer-finetuing-lora-prompt_cell_cls/
+   $ python script.py --working_dir "/UniD3/KG_building_level2/level2_T2_70B" --model "myllama3.3_70B" --mode "mix"
    ```
 
 
