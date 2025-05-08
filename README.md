@@ -32,7 +32,7 @@ With the rapid development of large-scale language models (LLMs) in the biomedic
    ds = load_dataset("Mike2481/UniD3_DDM")
    ```
 
-   (3) [DEA](https://huggingface.co/datasets/Mike2481/UniD3_DEA)
+   (2) [DEA](https://huggingface.co/datasets/Mike2481/UniD3_DEA)
 
    #### Pandas  <img src="https://pandas.pydata.org/static/img/pandas_mark.svg" alt="Pandas" width="20" />
    ```
@@ -47,7 +47,7 @@ With the rapid development of large-scale language models (LLMs) in the biomedic
    ds = load_dataset("Mike2481/UniD3_DEA")
    ```
    
-   (4) [DTA](https://huggingface.co/datasets/Mike2481/UniD3_DTA)
+   (3) [DTA](https://huggingface.co/datasets/Mike2481/UniD3_DTA)
 
    #### Pandas  <img src="https://pandas.pydata.org/static/img/pandas_mark.svg" alt="Pandas" width="20" />
    ```
