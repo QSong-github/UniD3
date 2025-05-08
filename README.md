@@ -7,7 +7,8 @@
    # entering the code directory
    $ cd ./benchmark/Geneformer-finetuing-lora-prompt_cell_cls/
    ```
- ![Hugging Face](https://huggingface.co/front/assets/huggingface_logo.svg)
+
+<img src="https://huggingface.co/front/assets/huggingface_logo.svg" alt="Hugging Face" width="150" />
 ### Dataset Usage
    (1) [DDM](https://huggingface.co/datasets/Mike2481/UniD3_DDM)
    
