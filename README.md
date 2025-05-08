@@ -10,7 +10,7 @@
 
 
 
-### Dataset Usage  <img src="https://huggingface.co/front/assets/huggingface_logo.svg" alt="Hugging Face" width="10" />
+### Dataset Usage  <img src="https://huggingface.co/front/assets/huggingface_logo.svg" alt="Hugging Face" width="16" />
    (1) [DDM](https://huggingface.co/datasets/Mike2481/UniD3_DDM)
    
    ```bash
