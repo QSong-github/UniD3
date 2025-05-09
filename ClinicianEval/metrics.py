@@ -30,4 +30,4 @@ def calculate_metrics(csv_file):
     print(f"AUROC: {auroc:.4f}")
 
 
-calculate_metrics('/UniD3/ClinicianEval/fda_drug_effect.xlsx')
+calculate_metrics('/UniD3/ClinicianEval/fda_drug_effect_by_clinician.xlsx')
