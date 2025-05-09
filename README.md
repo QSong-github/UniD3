@@ -8,8 +8,9 @@ The relevant KGs and vector database are stored in [zenodo](https://zenodo.org/r
 ![The workflow of Uni$D^3$](wkfl.png)
 
 
-### QA with UniD3
+### UniD3 QA （under [LightRAG](https://github.com/HKUDS/LightRAG) framework）
    ```bash
+   # Please download our generated knowledge graph from zenodo before using UniD3 QA. 
    # Please specify the specific working path, large language model and search method.
    $ python QA_launcher.py --working_dir "/UniD3/KG_building_level2/level2_T2_70B" --model "myllama3.3_70B" --mode "mix"
    ```
