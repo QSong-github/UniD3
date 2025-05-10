@@ -39,7 +39,7 @@ The genertared KGs and vector database are stored in [zenodo](https://zenodo.org
    ```
    import pandas as pd
    # Login using e.g. `huggingface-cli login` to access this dataset
-   ds = load_dataset("Mike2481/UniD3_DEA")
+   df = pd.read_csv("hf://datasets/Mike2481/UniD3_DEA/DEA.csv")
    ```
    #### HuggingFace <img src="https://huggingface.co/front/assets/huggingface_logo.svg" alt="Hugging Face" width="20" />
    ```
