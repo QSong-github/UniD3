@@ -11,7 +11,7 @@ from lightrag.llm import ollama_model_complete, ollama_embedding
 from lightrag.utils import EmbeddingFunc
 from tqdm import tqdm
 
-WORKING_DIR = "/blue/qsong1/wang.qing/LightRAG-main/KG_building_level2/level2_T1_70B"
+WORKING_DIR = "/UniD3/KG_building_level2/level2_T1_70B"
 
 logging.basicConfig(format="%(levelname)s:%(message)s", level=logging.INFO)
 
@@ -51,7 +51,7 @@ def main():
     rag = asyncio.run(initialize_rag())
     print("\nStarting Mix Search:")
 
-    with open('/blue/qsong1/wang.qing/LightRAG-main/PubMedQA/matched_questionsDDM.csv', mode='r', encoding='utf-8-sig') as infile:
+    with open('/UniD3/PubMedQA/matched_questionsDDM.csv', mode='r', encoding='utf-8-sig') as infile:
         csvreader = csv.reader(infile)
         
         for row in tqdm(csvreader, desc="Processing"):
