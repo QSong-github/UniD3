@@ -33,5 +33,5 @@ def find_matches(question_file, drug_file, output_file):
 
 
 find_matches("hf://datasets/qiaojin/PubMedQA/pqa_artificial/train-00000-of-00001.parquet", 
-             '/blue/qsong1/wang.qing/LightRAG-main/Dataset_generation/DEA.csv', 
+             '/UniD3/Dataset_generation/DEA.csv', 
              'matched_questionsDEA.csv')
