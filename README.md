@@ -1,4 +1,4 @@
-# UniD3: LLM-driven Drug-Disease Dataset Construction via KG-RAG
+# Uni$D^3$: LLM-driven Drug-Disease Dataset Construction via KG-RAG
 
 
 ### Overview
