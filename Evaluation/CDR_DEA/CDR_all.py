@@ -34,14 +34,14 @@ filtered_dea = df_DEA_effective[
 ]
 
 
-df_p3ps = pd.DataFrame(filtered_cdr)
+df_CDR = pd.DataFrame(filtered_cdr)
 
 
-df_p3ps["drug_upper"] = df_p3ps["head_chemical_entName"].str.upper()
+df_CDR["drug_upper"] = df_CDR["head_chemical_entName"].str.upper()
 filtered_dea["drug_upper"] = filtered_dea["drug"].str.upper()
 
 
-merged = pd.merge(df_p3ps, filtered_dea, on="drug_upper", how="inner")
+merged = pd.merge(df_CDR, filtered_dea, on="drug_upper", how="inner")
 
 
 final_df = merged[["drug", "disease", "head_chemical_entName", "tail_disease_entName"]]
