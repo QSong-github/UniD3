@@ -36,5 +36,5 @@ final_df = filtered_merged[["drug", "disease", "drugName", "condition"]]
 
 final_df = final_df.drop_duplicates()
 final_df.to_csv("DR_fuzzy_eff.csv", index=False)
-print(f"模糊匹配保留了 {len(final_df)} 条记录")
+print(f" {len(final_df)} ")
 print(final_df.head())
