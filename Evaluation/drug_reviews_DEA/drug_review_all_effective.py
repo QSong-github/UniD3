@@ -23,12 +23,12 @@ filtered_dr = df_dr_effective[df_dr_effective['drugName'].str.upper().isin(inter
 filtered_dea = df_DEA_effective[df_DEA_effective['drug'].str.upper().isin(intersection)]
 
 
-df_p3ps = pd.DataFrame(filtered_dr)
+df_dr = pd.DataFrame(filtered_dr)
 
-df_p3ps["drug_upper"] = df_p3ps["drugName"].str.upper()
+df_dr["drug_upper"] = df_dr["drugName"].str.upper()
 filtered_dea["drug_upper"] = filtered_dea["drug"].str.upper()
 
-merged = pd.merge(df_p3ps, filtered_dea, on="drug_upper", how="inner")
+merged = pd.merge(df_dr, filtered_dea, on="drug_upper", how="inner")
 
 final_df = merged[["drug", "disease", "drugName", "condition"]]
 
