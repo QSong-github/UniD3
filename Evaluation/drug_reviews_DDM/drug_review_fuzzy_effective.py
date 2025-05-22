@@ -17,11 +17,11 @@ df_ddm["disease_upper"] = df_ddm["disease"].str.upper()
 
 
 common_drugs = set(df_ddm["drug_upper"]) & set(df_dr_effective["drug_upper"])
-df_p3ps_filtered = df_dr_effective[df_dr_effective["drug_upper"].isin(common_drugs)]
+df_dr_filtered = df_dr_effective[df_dr_effective["drug_upper"].isin(common_drugs)]
 df_ddm_filtered = df_ddm[df_ddm["drug_upper"].isin(common_drugs)]
 
 
-merged = pd.merge(df_p3ps_filtered, df_ddm_filtered, on="drug_upper", how="inner")
+merged = pd.merge(df_dr_filtered, df_ddm_filtered, on="drug_upper", how="inner")
 
 
 def is_similar(row, threshold=60):
