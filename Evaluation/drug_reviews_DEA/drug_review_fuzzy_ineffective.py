@@ -10,31 +10,31 @@ df_dr_ineffective = df_dr[df_dr["rating"] <= 3]
 df_dr_ineffective["drug_upper"] = df_dr_ineffective["drugName"].str.upper()
 df_dr_ineffective["condition_upper"] = df_dr_ineffective["condition"].str.upper()
 
-# 加载 DEA 数据，只保留有效样本
+
 df_dea = pd.read_csv('/UniD3/Dataset_generation/DEA.csv')
 df_dea = df_dea[df_dea["label"].str.lower() == "ineffective"]
 df_dea["drug_upper"] = df_dea["drug"].str.upper()
 df_dea["disease_upper"] = df_dea["disease"].str.upper()
 
-# 找出共同药物
+
 common_drugs = set(df_dea["drug_upper"]) & set(df_dr_ineffective["drug_upper"])
-df_p3ps_filtered = df_dr_ineffective[df_dr_ineffective["drug_upper"].isin(common_drugs)]
+df_dr_filtered = df_dr_ineffective[df_dr_ineffective["drug_upper"].isin(common_drugs)]
 df_dea_filtered = df_dea[df_dea["drug_upper"].isin(common_drugs)]
 
-# 笛卡尔积合并
-merged = pd.merge(df_p3ps_filtered, df_dea_filtered, on="drug_upper", how="inner")
 
-# 模糊匹配条件
+merged = pd.merge(df_dr_filtered, df_dea_filtered, on="drug_upper", how="inner")
+
+
 def is_similar(row, threshold=60):
     return fuzz.token_set_ratio(row['disease_upper'], row['condition_upper']) >= threshold
 
-# 筛选匹配
+
 filtered_merged = merged[merged.apply(is_similar, axis=1)]
 
-# 输出结果
+
 final_df = filtered_merged[["drug", "disease", "drugName", "condition"]]
-# 去除重复行（完全相同的才会被去掉）
+
 final_df = final_df.drop_duplicates()
 final_df.to_csv("DR_fuzzy_ineff.csv", index=False)
-print(f"模糊匹配保留了 {len(final_df)} 条记录")
+print(f"{len(final_df)}")
 print(final_df.head())
