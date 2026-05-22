@@ -3,23 +3,23 @@
 
 ### Overview
 
-Drug--disease knowledge underpins drug discovery and precision medicine, yet most of it is locked in unstructured PubMed articles and only partially captured by curated databases. We release UniD
--KG, a suite of six knowledge graphs spanning three tasks (Drug--Disease Matching, DDM; Drug Effectiveness Assessment, DEA; and Drug--Target Analysis, DTA), and UniD
+Drug--disease knowledge underpins drug discovery and precision medicine, yet most of it is locked in unstructured PubMed articles and only partially captured by curated databases. We release UniD3
+-KG, a suite of six knowledge graphs spanning three tasks (Drug--Disease Matching, DDM; Drug Effectiveness Assessment, DEA; and Drug--Target Analysis, DTA), and UniD3
 -data, three open QA datasets (
  DDM, 
  DEA and 
  DTA pairs), distilled from 
- PubMed articles with Llama-3.3-70B by the UniD
- KG-RAG pipeline, which couples task-specific prompting with a dual-stage entity extraction that re-extracts over the consolidated graph to recover cross-chunk and cross-document evidence. External validation on CDR, DrugReviews, P3ps and MedicationQA and a benchmark across seven LLM baselines and three retrieval variants show that UniD
--data is faithful to curated sources and that retrieval over UniD
+ PubMed articles with Llama-3.3-70B by the UniD3
+ KG-RAG pipeline, which couples task-specific prompting with a dual-stage entity extraction that re-extracts over the consolidated graph to recover cross-chunk and cross-document evidence. External validation on CDR, DrugReviews, P3ps and MedicationQA and a benchmark across seven LLM baselines and three retrieval variants show that UniD3
+-data is faithful to curated sources and that retrieval over UniD3
 -KG consistently improves biomedical QA; a blinded clinician review of 
- FDA-approved, US-marketed drugs further confirms strong agreement with the UniD
+ FDA-approved, US-marketed drugs further confirms strong agreement with the UniD3
 -data DDM split (accuracy 
 , F1 
 , AUROC 
-). All artefacts---UniD
--KG, UniD
--data, benchmark scripts and the UniD
+). All artefacts---UniD3
+-KG, UniD3
+-data, benchmark scripts and the UniD3
 -QA explainable chatbot---are released as shared infrastructure for biomedical NLP and drug repurposing. The generated KGs and vector database are stored in [zenodo](https://zenodo.org/records/15368180). In addition, the UniD3 web [chatbot](https://unid3.site/) provides interactive access to the UniD3-generated datasets, enabling users to explore and query the resources.
 
 ![The workflow of Uni$D^3$](unid3.png)
