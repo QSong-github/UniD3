@@ -1,9 +1,26 @@
-# $\text{Uni}D^3$: A Knowledge Graph-Enhanced Retrieval-Augmented Generation Framework for Drug–Disease Discovery and Reasoning
+# $\text{Uni}D^3$: Open Knowledge Graphs and QA Benchmarks for Drug–Disease Discovery and Reasoning
 
 
 ### Overview
 
-Drug–disease knowledge underpins drug discovery, repurposing and precision medicine, but is locked away in millions of unstructured biomedical abstracts and is only partially captured by manually curated databases. We present **UniD3**, an application-oriented framework that operationalises recent advances in large language models (LLMs) and knowledge-graph retrieval-augmented generation (KG-RAG) to turn raw PubMed literature into structured biomedical resources at scale. **UniD3** couples *task-specific prompting* for three clinically motivated tasks—Drug–Disease Matching (**DDM**), Drug Effectiveness Assessment (**DEA**) and Drug–Target Analysis (**DTA**)—with a *dual-stage entity extraction* procedure that performs paper-level extraction first and then re-extracts over the consolidated graph to recover cross-chunk and cross-document evidence. Running the pipeline on 157,849 PubMed articles with Llama-3.3-70B yields six knowledge graphs and three open datasets (28,915 **DDM**, 15,042 **DEA** and >4,000 **DTA** question–answer pairs). External validation on CDR, DrugReviews, P3ps and MedicationQA, together with a benchmark of seven biomedical LLMs and three LightRAG-augmented variants, shows that the resulting datasets are faithful to curated biomedical sources and that retrieval over the **UniD3** graphs consistently improves downstream biomedical QA. We release all data, the constructed graphs and an explainable chatbot built on top, providing a reproducible, biomedical-application-driven recipe for KG-grounded LLM deployment in drug discovery and repurposing. The generated KGs and vector database are stored in [zenodo](https://zenodo.org/records/15368180). In addition, the UniD3 web [chatbot](https://unid3.site/) provides interactive access to the UniD3-generated datasets, enabling users to explore and query the resources.
+Drug--disease knowledge underpins drug discovery and precision medicine, yet most of it is locked in unstructured PubMed articles and only partially captured by curated databases. We release UniD
+-KG, a suite of six knowledge graphs spanning three tasks (Drug--Disease Matching, DDM; Drug Effectiveness Assessment, DEA; and Drug--Target Analysis, DTA), and UniD
+-data, three open QA datasets (
+ DDM, 
+ DEA and 
+ DTA pairs), distilled from 
+ PubMed articles with Llama-3.3-70B by the UniD
+ KG-RAG pipeline, which couples task-specific prompting with a dual-stage entity extraction that re-extracts over the consolidated graph to recover cross-chunk and cross-document evidence. External validation on CDR, DrugReviews, P3ps and MedicationQA and a benchmark across seven LLM baselines and three retrieval variants show that UniD
+-data is faithful to curated sources and that retrieval over UniD
+-KG consistently improves biomedical QA; a blinded clinician review of 
+ FDA-approved, US-marketed drugs further confirms strong agreement with the UniD
+-data DDM split (accuracy 
+, F1 
+, AUROC 
+). All artefacts---UniD
+-KG, UniD
+-data, benchmark scripts and the UniD
+-QA explainable chatbot---are released as shared infrastructure for biomedical NLP and drug repurposing. The generated KGs and vector database are stored in [zenodo](https://zenodo.org/records/15368180). In addition, the UniD3 web [chatbot](https://unid3.site/) provides interactive access to the UniD3-generated datasets, enabling users to explore and query the resources.
 
 ![The workflow of Uni$D^3$](unid3.png)
 
