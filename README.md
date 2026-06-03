@@ -42,5 +42,9 @@ The three QA datasets (DDM, DEA, DTA) will be released on a public dataset hub u
 
 ### Citation
 
+If you find this project is useful for your research, please cite:
+```
+Wang Q, Liu T, Zhou M, Liang J, Guo S, Wang G, Su J, Song Q. UniD³: A knowledge graph-enhanced RAG framework for drug-disease discovery and reasoning. arXiv. 2026; arXiv:2606.01394.
+```
 ### License
 MIT License (anonymized for review; copyright information will be added upon paper acceptance).
