@@ -1,11 +1,14 @@
 # $\text{Uni}D^3$: Open Knowledge Graphs and QA Benchmarks for Drug–Disease Discovery and Reasoning
 
 [![arXiv](https://img.shields.io/badge/arXiv-2606.01394-b31b1b.svg)](https://arxiv.org/abs/2606.01394)
+[![Web Chatbot](https://img.shields.io/badge/🌐%20Live%20Demo-unid3.site-brightgreen)](https://unid3.site/)
 [![HF Dataset DDM](https://img.shields.io/badge/🤗%20Dataset-UniD3__DDM-yellow)](https://huggingface.co/datasets/Mike2481/UniD3_DDM)
 [![HF Dataset DEA](https://img.shields.io/badge/🤗%20Dataset-UniD3__DEA-yellow)](https://huggingface.co/datasets/Mike2481/UniD3_DEA)
 [![HF Dataset DTA](https://img.shields.io/badge/🤗%20Dataset-UniD3__DTA-yellow)](https://huggingface.co/datasets/Mike2481/UniD3_DTA)
 
 📄 **Paper:** [UniD³: A knowledge graph-enhanced RAG framework for drug-disease discovery and reasoning](https://arxiv.org/abs/2606.01394) (arXiv:2606.01394)
+
+💬 **Web Chatbot:** [https://unid3.site/](https://unid3.site/)
 
 ### Overview
 
@@ -26,7 +29,7 @@ Drug--disease knowledge underpins drug discovery and precision medicine, yet mos
 ). All artefacts---UniD3
 -KG, UniD3
 -data, benchmark scripts and the UniD3
--QA explainable chatbot---are released as shared infrastructure for biomedical NLP and drug repurposing. The generated KGs, vector database, and the interactive UniD3 web chatbot will be released upon paper acceptance.
+-QA explainable chatbot---are released as shared infrastructure for biomedical NLP and drug repurposing. The interactive UniD3 web chatbot is now live at [https://unid3.site/](https://unid3.site/); the generated KGs and vector database will be released upon paper acceptance.
 
 ![The workflow of Uni$D^3$](unid3.png)
 
