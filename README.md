@@ -1,5 +1,11 @@
 # $\text{Uni}D^3$: Open Knowledge Graphs and QA Benchmarks for Drug–Disease Discovery and Reasoning
 
+[![arXiv](https://img.shields.io/badge/arXiv-2606.01394-b31b1b.svg)](https://arxiv.org/abs/2606.01394)
+[![HF Dataset DDM](https://img.shields.io/badge/🤗%20Dataset-UniD3__DDM-yellow)](https://huggingface.co/datasets/Mike2481/UniD3_DDM)
+[![HF Dataset DEA](https://img.shields.io/badge/🤗%20Dataset-UniD3__DEA-yellow)](https://huggingface.co/datasets/Mike2481/UniD3_DEA)
+[![HF Dataset DTA](https://img.shields.io/badge/🤗%20Dataset-UniD3__DTA-yellow)](https://huggingface.co/datasets/Mike2481/UniD3_DTA)
+
+📄 **Paper:** [UniD³: A knowledge graph-enhanced RAG framework for drug-disease discovery and reasoning](https://arxiv.org/abs/2606.01394) (arXiv:2606.01394)
 
 ### Overview
 
@@ -38,13 +44,29 @@ Drug--disease knowledge underpins drug discovery and precision medicine, yet mos
 
 ### Dataset Usage
 
-The three QA datasets (DDM, DEA, DTA) will be released on a public dataset hub upon paper acceptance. Once available, they will be loadable via standard `pandas.read_csv` or `datasets.load_dataset` interfaces.
+The three QA datasets (DDM, DEA, DTA) are publicly available on the Hugging Face Hub:
+
+| Task | Dataset | Link |
+| --- | --- | --- |
+| Drug–Disease Matching (DDM) | `Mike2481/UniD3_DDM` | https://huggingface.co/datasets/Mike2481/UniD3_DDM |
+| Drug Effectiveness Assessment (DEA) | `Mike2481/UniD3_DEA` | https://huggingface.co/datasets/Mike2481/UniD3_DEA |
+| Drug–Target Analysis (DTA) | `Mike2481/UniD3_DTA` | https://huggingface.co/datasets/Mike2481/UniD3_DTA |
+
+Load them directly with the 🤗 `datasets` library:
+
+```python
+from datasets import load_dataset
+
+ddm = load_dataset("Mike2481/UniD3_DDM")
+dea = load_dataset("Mike2481/UniD3_DEA")
+dta = load_dataset("Mike2481/UniD3_DTA")
+```
 
 ### Citation
 
 If you find this project is useful for your research, please cite:
 ```
-Wang Q, Liu T, Zhou M, Liang J, Guo S, Wang G, Su J, Song Q. UniD³: A knowledge graph-enhanced RAG framework for drug-disease discovery and reasoning. arXiv. 2026; arXiv:2606.01394.
+Wang Q, Liu T, Zhou M, Liang J, Guo S, Wang G, Su J, Song Q. UniD³: A knowledge graph-enhanced RAG framework for drug-disease discovery and reasoning. arXiv. 2026; arXiv:2606.01394. https://arxiv.org/abs/2606.01394
 ```
 ### License
 MIT License (anonymized for review; copyright information will be added upon paper acceptance).
