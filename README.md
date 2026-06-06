@@ -2,6 +2,7 @@
 
 [![arXiv](https://img.shields.io/badge/arXiv-2606.01394-b31b1b.svg)](https://arxiv.org/abs/2606.01394)
 [![Web Chatbot](https://img.shields.io/badge/🌐%20Live%20Demo-unid3.site-brightgreen)](https://unid3.site/)
+[![Zenodo](https://img.shields.io/badge/Zenodo-KGs%20%26%20Vector%20DB-blue)](https://zenodo.org/records/15368180)
 [![HF Dataset DDM](https://img.shields.io/badge/🤗%20Dataset-UniD3__DDM-yellow)](https://huggingface.co/datasets/Mike2481/UniD3_DDM)
 [![HF Dataset DEA](https://img.shields.io/badge/🤗%20Dataset-UniD3__DEA-yellow)](https://huggingface.co/datasets/Mike2481/UniD3_DEA)
 [![HF Dataset DTA](https://img.shields.io/badge/🤗%20Dataset-UniD3__DTA-yellow)](https://huggingface.co/datasets/Mike2481/UniD3_DTA)
@@ -9,6 +10,8 @@
 📄 **Paper:** [UniD³: A knowledge graph-enhanced RAG framework for drug-disease discovery and reasoning](https://arxiv.org/abs/2606.01394) (arXiv:2606.01394)
 
 💬 **Web Chatbot:** [https://unid3.site/](https://unid3.site/)
+
+📦 **Knowledge graphs & vector database (Zenodo):** [https://zenodo.org/records/15368180](https://zenodo.org/records/15368180)
 
 ### Overview
 
@@ -29,14 +32,14 @@ Drug--disease knowledge underpins drug discovery and precision medicine, yet mos
 ). All artefacts---UniD3
 -KG, UniD3
 -data, benchmark scripts and the UniD3
--QA explainable chatbot---are released as shared infrastructure for biomedical NLP and drug repurposing. The interactive UniD3 web chatbot is now live at [https://unid3.site/](https://unid3.site/); the generated KGs and vector database will be released upon paper acceptance.
+-QA explainable chatbot---are released as shared infrastructure for biomedical NLP and drug repurposing. The interactive UniD3 web chatbot is now live at [https://unid3.site/](https://unid3.site/), and the generated KGs and vector database are available on Zenodo at [https://zenodo.org/records/15368180](https://zenodo.org/records/15368180).
 
 ![The workflow of Uni$D^3$](unid3.png)
 
 
 ### UniD3 QA （under [LightRAG](https://github.com/HKUDS/LightRAG) framework（required lightrag-hku==1.1.0））
    ```bash
-   # Please download the generated knowledge graph from the release archive (link to be released upon acceptance) before using UniD3 QA. 
+   # Please download the generated knowledge graph and vector database from Zenodo (https://zenodo.org/records/15368180) before using UniD3 QA. 
    # Please specify the specific working path, large language model and RAG mode.
    $ conda env create -f UniD3_environment.yaml
    # run ollama before here
@@ -64,6 +67,17 @@ ddm = load_dataset("Mike2481/UniD3_DDM")
 dea = load_dataset("Mike2481/UniD3_DEA")
 dta = load_dataset("Mike2481/UniD3_DTA")
 ```
+
+### Resources
+
+| Resource | Link |
+| --- | --- |
+| Paper (arXiv) | https://arxiv.org/abs/2606.01394 |
+| Web chatbot | https://unid3.site/ |
+| Knowledge graphs & vector database (Zenodo) | https://zenodo.org/records/15368180 |
+| Dataset — DDM | https://huggingface.co/datasets/Mike2481/UniD3_DDM |
+| Dataset — DEA | https://huggingface.co/datasets/Mike2481/UniD3_DEA |
+| Dataset — DTA | https://huggingface.co/datasets/Mike2481/UniD3_DTA |
 
 ### Citation
 
